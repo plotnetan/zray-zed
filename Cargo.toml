@@ -1,0 +1,17 @@
+[package]
+name = "zray-zed"
+version = "0.1.0"
+edition = "2021"
+publish = false
+license = "MIT"
+
+# built by Zed for wasm32-wasip2, outside the Zray workspace
+[workspace]
+
+[lib]
+crate-type = ["cdylib"]
+path = "src/lib.rs"
+
+[dependencies]
+zed_extension_api = "0.7.0"
+sha2 = "0.10"

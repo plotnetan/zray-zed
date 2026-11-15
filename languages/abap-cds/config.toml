@@ -1,0 +1,15 @@
+name = "ABAP CDS"
+grammar = "abap_cds"
+# data definitions, metadata extensions, access controls, service definitions (abapGit and `zray sap pull` names)
+path_suffixes = ["ddls", "asddls", "ddlx", "asddlxs", "dcls", "asdcls", "srvd", "srvdsrv"]
+line_comments = ["// "]
+block_comment = ["/* ", " */"]
+tab_size = 2
+hard_tabs = false
+word_characters = ["_", "$", "/"]
+brackets = [
+  { start = "{", end = "}", close = true, newline = true },
+  { start = "(", end = ")", close = true, newline = false },
+  { start = "[", end = "]", close = true, newline = false },
+  { start = "'", end = "'", close = true, newline = false, not_in = ["string", "comment"] },
+]

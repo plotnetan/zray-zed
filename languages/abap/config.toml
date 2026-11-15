@@ -1,0 +1,18 @@
+name = "ABAP"
+grammar = "abap"
+path_suffixes = ["abap"]
+line_comments = ["\" ", "* "]
+tab_size = 2
+hard_tabs = false
+word_characters = ["-", "/", "<", ">", "~", "%", "$"]
+brackets = [
+  { start = "(", end = ")", close = true, newline = false },
+  { start = "[", end = "]", close = true, newline = false },
+  { start = "'", end = "'", close = true, newline = false, not_in = ["string", "comment"] },
+  { start = "`", end = "`", close = true, newline = false, not_in = ["string", "comment"] },
+  { start = "|", end = "|", close = true, newline = false, not_in = ["string", "comment"] },
+]
+# ABAP blocks are statements (IF ... ENDIF), not brackets: indent after a statement that opens one, outdent the one
+# that continues or closes it
+increase_indent_pattern = '^\s*(?i:class\s+\S+\s+(definition|implementation)|interface\s+\S+|method\s|form\s|function\s|module\s|if\s|elseif\s|else\s*\.|loop[\s.]|do[\s.]|while\s|case\s|when\s|try\s*\.|catch\s|cleanup[\s.]|at\s|provide\s|(public|protected|private)\s+section|start-of-selection|end-of-selection|initialization|top-of-page|end-of-page|load-of-program).*\.\s*("[^\n]*)?$'
+decrease_indent_pattern = '^\s*(?i:end(class|interface|method|form|function|module|if|loop|do|while|case|try|at|provide|select|on|exec|chain)\b|else\b|elseif\b|when\b|catch\b|cleanup\b|(public|protected|private)\s+section\b)'

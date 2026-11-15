@@ -1,0 +1,7 @@
+name = "SAP Analysis"
+# the full system analysis of a SAP folder (analysis.sapanalysis, written by Zray): no grammar, the language
+# server gives hover and the actions of a step (ctrl-.: run it, run the remaining steps, run it again, cancel)
+path_suffixes = ["sapanalysis"]
+tab_size = 2
+hard_tabs = false
+soft_wrap = "none"
