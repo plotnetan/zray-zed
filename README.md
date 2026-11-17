@@ -1,4 +1,4 @@
-# Zray for Zed
+# ABAP for Zed
 
 ABAP, CDS and RAP behavior definitions in [Zed](https://zed.dev): highlighting, brackets, indentation and outline.
 
@@ -22,7 +22,7 @@ Sources in an ETL export with `.txt` files need `.zed/settings.json` in the fold
 
 ## Install
 
-From Zed's extension registry: command palette → `zed: extensions` → search for **Zray**.
+From Zed's extension registry: command palette → `zed: extensions` → search for **ABAP**.
 
 As a development extension (needs [Rust](https://rustup.rs) and git): clone this repository, then command palette →
 `zed: install dev extension` → the cloned folder.

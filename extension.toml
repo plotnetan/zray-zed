@@ -1,9 +1,9 @@
-id = "zray"
-name = "Zray"
+id = "abap"
+name = "ABAP"
 version = "0.1.0"
 schema_version = 1
 authors = ["Zray"]
-description = "ABAP, CDS and RAP behavior definitions: highlighting, brackets, indentation and outline"
+description = "ABAP, ABAP CDS and RAP behavior definitions (BDEF): highlighting, brackets, indentation and outline"
 repository = "https://github.com/plotnetan/zray-zed"
 
 # The grammars (MIT, Zray): one public repository, a folder per grammar.
