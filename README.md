@@ -17,9 +17,6 @@ The outline lists the program, classes, interfaces, methods, forms, function mod
 ABAP; the definitions (views, entities, metadata extensions, access controls, services) in CDS; the entities with
 their actions, determinations, validations and associations in BDEF.
 
-Sources in an ETL export with `.txt` files need `.zed/settings.json` in the folder:
-`{ "file_types": { "ABAP": ["txt"] } }`.
-
 ## Install
 
 From Zed's extension registry: command palette → `zed: extensions` → search for **ABAP**.
