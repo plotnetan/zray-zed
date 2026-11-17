@@ -3,14 +3,8 @@ name = "Zray"
 version = "0.1.0"
 schema_version = 1
 authors = ["Zray"]
-description = "ABAP, CDS and RAP behavior definitions for Zed: diagnostics, verified fixes, navigation and a read-only SAP connection (ADT)"
-
-[language_servers.zray]
-name = "Zray"
-languages = ["ABAP", "ABAP CDS", "ABAP BDEF", "SAP Packages", "Zray Start", "SAP Analysis"]
-
-# The MCP server for Zed's agent (`zray mcp`): the analysis of the project's ABAP as tools.
-[context_servers.zray]
+description = "ABAP, CDS and RAP behavior definitions: highlighting, brackets, indentation and outline"
+repository = "https://github.com/plotnetan/zray-zed"
 
 # The grammars (MIT, Zray): one public repository, a folder per grammar.
 [grammars.abap]

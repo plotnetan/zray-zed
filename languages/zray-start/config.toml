@@ -1,8 +1,0 @@
-name = "Zray Start"
-# the first connection of a folder (zray.start in an empty folder): no grammar, the language server writes the
-# form and its status, connects when the file is saved, and offers its actions (ctrl-.)
-path_suffixes = ["zray.start"]
-line_comments = ["# "]
-tab_size = 2
-hard_tabs = false
-soft_wrap = "none"

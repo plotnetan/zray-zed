@@ -1,8 +1,0 @@
-name = "SAP Packages"
-# the package catalog of a SAP folder (packages.sappkg, written by Zray): no grammar, the language server
-# gives hover, outline, the connect / refresh actions (ctrl-.) and the packages in the project symbol search
-path_suffixes = ["sappkg"]
-tab_size = 2
-hard_tabs = false
-soft_wrap = "none"
-word_characters = ["_", "$", "/"]
