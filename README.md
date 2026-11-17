@@ -28,10 +28,9 @@ Until Zray is published in Zed's extension registry, it is installed as a develo
 
    `"settings": { "manifestUrl": "…" }` names another release manifest (a company's own copy).
 4. Connect a folder to SAP (next section), or open a folder that already holds ABAP sources (an abapGit
-   repository, an ETL import). **Trust the folder** when Zed asks: in restricted mode Zed starts no language server.
+   repository). **Trust the folder** when Zed asks: in restricted mode Zed starts no language server.
 
-Sources must be `.abap` files. An ETL export with `.txt` sources needs `.zed/settings.json` in the folder:
-`{ "file_types": { "ABAP": ["txt"] } }`. Do not point `binary.path` at a build output: a running server locks the
+Sources must be `.abap` files. Do not point `binary.path` at a build output: a running server locks the
 `.exe` on Windows.
 
 ## Connect to SAP: `zray.start`
@@ -161,7 +160,7 @@ with `--allow-push` also `push` (it shows the plan first and pushes only when co
 
 ## The project's configuration: `zray.json`
 
-Every SAP folder (a folder connected to SAP, or with an ETL extract) gets three files, written when they are missing:
+Every SAP folder (a folder connected to SAP) gets three files, written when they are missing:
 
 - **`zray.json`**: the rules, fixes, pretty print and analysis of this folder, shared by the team (commit it) and
   read by the editor, the MCP server and `zray aic`. Zed completes and checks it while you type (the schema
